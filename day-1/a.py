@@ -1,6 +1,6 @@
 def main() -> None:
     with open('./input.txt', 'r') as f:
-        digits = [list(filter(lambda x: x.isnumeric(), list(line))) for line in f.readlines()]
+        digits = [list(filter(lambda x: x.isnumeric(), line)) for line in f.readlines()]
         print(sum(int(digit[0] + digit[-1]) for digit in digits))
 
 
