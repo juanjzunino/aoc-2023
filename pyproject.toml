@@ -1,6 +1,11 @@
 [tool.ruff]
 ignore-init-module-imports = true
 line-length = 120
+extend-select = ["W191", "W291", "W293"]
 
 [tool.ruff.format]
 quote-style = "single"
+
+[tool.mypy]
+warn_redundant_casts = true
+ignore_missing_imports = true
