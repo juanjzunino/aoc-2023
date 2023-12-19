@@ -7,8 +7,7 @@ def main() -> None:
             winning = set(map(int, winning_str.split()))
             stack = set(map(int, stack_str.split()))
             matches = stack.intersection(winning)
-            point = 2 ** (len(matches) - 1) if len(matches) > 0 else 0
-            points += point
+            points += 2 ** (len(matches) - 1) if len(matches) > 0 else 0
         print(points)
 
 
